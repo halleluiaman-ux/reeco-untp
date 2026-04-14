@@ -1,0 +1,140 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    "https://vocabulary.uncefact.org/untp/dcc/0.6.1/"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "DigitalConformityCredential"
+  ],
+  "id": "https://portal.reeco.eco/dcc/test/RCO-TEST-DCC-GRS-001",
+  "issuer": {
+    "type": [
+      "CredentialIssuer"
+    ],
+    "id": "https://portal.reeco.eco/operators/reeco-test",
+    "name": "Reeco \u2014 DCC Issuer (on behalf of certification body)"
+  },
+  "validFrom": "2026-02-01T00:00:00Z",
+  "validUntil": "2027-02-01T00:00:00Z",
+  "credentialSubject": {
+    "type": [
+      "ConformityAttestation",
+      "Attestation"
+    ],
+    "id": "https://portal.reeco.eco/dcc/test/RCO-TEST-DCC-GRS-001",
+    "description": "Transaction Certificate RCO-TC-2026-001 \u2014 GRS v4.0 \u2014 Recycled Polyester Staple Fibre, 500 kg \u2014 Issued by Control Union Certifications BV to Reeco Test Operator Srl",
+    "scope": {
+      "type": [
+        "ConformityAssessmentScheme"
+      ],
+      "id": "https://textileexchange.org/standards/grs",
+      "name": "Global Recycled Standard (GRS) v4.0",
+      "issuingParty": {
+        "id": "https://textileexchange.org",
+        "name": "Textile Exchange"
+      },
+      "issueDate": "2023-01-01"
+    },
+    "issuedToParty": {
+      "id": "https://portal.reeco.eco/operators/reeco-test",
+      "name": "Reeco Test Operator Srl",
+      "registeredId": "IT12345678901",
+      "idScheme": {
+        "type": [
+          "IdentifierScheme"
+        ],
+        "id": "https://ec.europa.eu/taxation_customs/vies/",
+        "name": "EU VAT Number"
+      }
+    },
+    "assessment": [
+      {
+        "type": [
+          "ConformityAssessment"
+        ],
+        "id": "https://portal.reeco.eco/dcc/test/RCO-TEST-DCC-GRS-001/assessment/1",
+        "name": "TC RCO-TC-2026-001 \u2014 GRS v4.0 \u2014 Recycled Polyester Staple Fibre 1.4 dtex \u00d7 38mm",
+        "referenceStandard": {
+          "type": [
+            "Standard"
+          ],
+          "id": "https://textileexchange.org/standards/grs",
+          "name": "Global Recycled Standard (GRS) v4.0",
+          "issuingParty": {
+            "id": "https://textileexchange.org",
+            "name": "Textile Exchange"
+          },
+          "issueDate": "2023-01-01"
+        },
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ],
+            "id": "https://textileexchange.org/standards/grs#chain-of-custody",
+            "name": "GRS v4.0 \u2014 Chain of Custody",
+            "description": "Transaction-based or site-based chain of custody for certified recycled content",
+            "conformityTopic": "circularity.content",
+            "status": "active"
+          }
+        ],
+        "declaredValue": [
+          {
+            "metricName": "Certified recycled material volume",
+            "metricValue": {
+              "value": 500,
+              "unit": "KGM"
+            },
+            "accuracy": 1.0
+          },
+          {
+            "metricName": "Recycled content percentage",
+            "metricValue": {
+              "value": 1.0,
+              "unit": "P1"
+            },
+            "accuracy": 0.0
+          }
+        ],
+        "conformance": true,
+        "conformityTopic": "circularity.content",
+        "conformityEvidence": {
+          "linkURL": "https://portal.reeco.eco/ledger/test/RCO-LEDGER-2026-001",
+          "linkName": "Reeco verification ledger entry \u2014 TC RCO-TC-2026-001",
+          "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
+          "hashDigest": "a3f8c2d1e4b5609f7e8a2b3c4d5e6f7089abcdef1234567890abcdef12345678",
+          "hashMethod": "SHA-256"
+        }
+      }
+    ],
+    "auditableEvidence": {
+      "linkURL": "https://portal.reeco.eco/ledger/test/RCO-LEDGER-2026-001",
+      "linkName": "Reeco TC verification ledger \u2014 SHA-256 integrity reference",
+      "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
+      "hashDigest": "a3f8c2d1e4b5609f7e8a2b3c4d5e6f7089abcdef1234567890abcdef12345678",
+      "hashMethod": "SHA-256"
+    },
+    "authorisation": [
+      {
+        "type": [
+          "Endorsement"
+        ],
+        "id": "https://www.controlunion.com/certifications/GRS",
+        "name": "Control Union Certifications BV \u2014 GRS Accreditation",
+        "issuingAuthority": {
+          "id": "https://www.controlunion.com",
+          "name": "Control Union Certifications BV",
+          "registeredId": "NL-CUC-001",
+          "idScheme": {
+            "type": [
+              "IdentifierScheme"
+            ],
+            "id": "https://ec.europa.eu/taxation_customs/vies/",
+            "name": "EU VAT Number"
+          }
+        }
+      }
+    ]
+  }
+}

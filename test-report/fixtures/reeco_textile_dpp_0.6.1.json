@@ -1,0 +1,247 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    "https://test.uncefact.org/vocabulary/untp/dpp/0.6.1/"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "DigitalProductPassport"
+  ],
+  "id": "https://portal.reeco.eco/dpp/test/RCO-TEST-DPP-001",
+  "issuer": {
+    "type": [
+      "CredentialIssuer"
+    ],
+    "id": "https://portal.reeco.eco/operators/reeco-test",
+    "name": "Reeco Test Operator"
+  },
+  "validFrom": "2026-03-01T00:00:00Z",
+  "validUntil": "2029-03-01T00:00:00Z",
+  "credentialSubject": {
+    "type": [
+      "ProductPassport"
+    ],
+    "id": "https://portal.reeco.eco/dpp/test/RCO-TEST-DPP-001",
+    "granularityLevel": "batch",
+    "product": {
+      "type": [
+        "Product"
+      ],
+      "id": "https://id.gs1.org/01/0800501000000",
+      "name": "Linen Shirt 55% Linen 45% Recycled Polyester",
+      "registeredId": "0800501000000",
+      "idScheme": {
+        "type": [
+          "IdentifierScheme"
+        ],
+        "id": "https://id.gs1.org/01/",
+        "name": "Global Trade Identification Number (GTIN)"
+      },
+      "batchNumber": "RCO-BATCH-2026-001",
+      "description": "Woven linen shirt \u2014 55% linen (IT origin), 45% GRS-certified recycled polyester. HS 6205.20. Produced in IT.",
+      "productCategory": [
+        {
+          "type": [
+            "Classification"
+          ],
+          "id": "https://www.wcoomd.org/hs/6205",
+          "code": "6205",
+          "name": "Men's shirts of other textile materials",
+          "schemeID": "https://www.wcoomd.org/hs/",
+          "schemeName": "Harmonized System (HS)"
+        }
+      ],
+      "furtherInformation": [
+        {
+          "linkURL": "https://portal.reeco.eco/care/RCO-TEST-DPP-001",
+          "linkName": "Care instructions \u2014 ISO 3758",
+          "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dpp"
+        }
+      ],
+      "producedByParty": {
+        "id": "https://portal.reeco.eco/operators/reeco-test",
+        "name": "Reeco Test Operator Srl",
+        "registeredId": "IT12345678901",
+        "idScheme": {
+          "type": [
+            "IdentifierScheme"
+          ],
+          "id": "https://ec.europa.eu/taxation_customs/vies/",
+          "name": "EU VAT Number"
+        }
+      },
+      "producedAtFacility": {
+        "id": "https://portal.reeco.eco/facilities/test-factory-IT",
+        "name": "Test Garment Factory \u2014 Prato, Italy",
+        "registeredId": "IT-FAC-001",
+        "idScheme": {
+          "type": [
+            "IdentifierScheme"
+          ],
+          "id": "https://portal.reeco.eco/facilities/",
+          "name": "Reeco Facility Register"
+        }
+      },
+      "productionDate": "2026-02-15",
+      "countryOfProduction": "IT",
+      "dimensions": {
+        "weight": {
+          "value": 0.185,
+          "unit": "KGM"
+        }
+      }
+    },
+    "materialsProvenance": [
+      {
+        "name": "Linen",
+        "originCountry": "IT",
+        "materialType": {
+          "type": [
+            "Classification"
+          ],
+          "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/2631",
+          "code": "LI",
+          "name": "Linen fibre",
+          "schemeID": "https://unece.org/trade/uncefact/recommendation-no46",
+          "schemeName": "UNECE Rec 46 Textile Fibre Nomenclature"
+        },
+        "massFraction": 0.55,
+        "mass": {
+          "value": 0.102,
+          "unit": "KGM"
+        },
+        "recycledMassFraction": 0.0,
+        "hazardous": false
+      },
+      {
+        "name": "Recycled Polyester (GRS certified)",
+        "originCountry": "CN",
+        "materialType": {
+          "type": [
+            "Classification"
+          ],
+          "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/2634",
+          "code": "PL",
+          "name": "Polyester fibre (recycled)",
+          "schemeID": "https://unece.org/trade/uncefact/recommendation-no46",
+          "schemeName": "UNECE Rec 46 Textile Fibre Nomenclature"
+        },
+        "massFraction": 0.45,
+        "mass": {
+          "value": 0.083,
+          "unit": "KGM"
+        },
+        "recycledMassFraction": 1.0,
+        "hazardous": false
+      }
+    ],
+    "conformityClaim": [
+      {
+        "type": [
+          "Claim",
+          "Declaration"
+        ],
+        "id": "https://portal.reeco.eco/dpp/test/RCO-TEST-DPP-001/claims/grs",
+        "description": "45% recycled polyester content certified under Global Recycled Standard (GRS) v4.0. Transaction Certificate verified by Reeco mass balance engine at batch level.",
+        "referenceStandard": {
+          "type": [
+            "Standard"
+          ],
+          "id": "https://textileexchange.org/standards/grs",
+          "name": "Global Recycled Standard (GRS) v4.0",
+          "issuingParty": {
+            "id": "https://textileexchange.org",
+            "name": "Textile Exchange"
+          },
+          "issueDate": "2023-01-01"
+        },
+        "referenceRegulation": {
+          "type": [
+            "Regulation"
+          ],
+          "id": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1781",
+          "name": "ESPR \u2014 Ecodesign for Sustainable Products Regulation (EU) 2024/1781",
+          "jurisdictionCountry": "EU",
+          "administeredBy": {
+            "id": "https://ec.europa.eu/",
+            "name": "European Commission"
+          },
+          "effectiveDate": "2024-07-18"
+        },
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ],
+            "id": "https://textileexchange.org/standards/grs#recycled-content",
+            "name": "GRS v4.0 \u2014 Recycled Input Materials",
+            "description": "Product must contain minimum 20% recycled content by weight. All recycled content must be third-party certified.",
+            "conformityTopic": "circularity.content",
+            "status": "active",
+            "thresholdValue": {
+              "metricName": "Minimum recycled content",
+              "metricValue": {
+                "value": 0.2,
+                "unit": "P1"
+              },
+              "accuracy": 0.01
+            }
+          }
+        ],
+        "assessmentDate": "2026-02-15",
+        "declaredValue": [
+          {
+            "metricName": "Recycled polyester content",
+            "metricValue": {
+              "value": 0.45,
+              "unit": "P1"
+            },
+            "accuracy": 0.01
+          },
+          {
+            "metricName": "Certified material consumed (batch)",
+            "metricValue": {
+              "value": 83.0,
+              "unit": "KGM"
+            },
+            "accuracy": 0.5
+          }
+        ],
+        "conformance": true,
+        "conformityTopic": "circularity.content",
+        "conformityEvidence": {
+          "linkURL": "https://portal.reeco.eco/dcc/test/RCO-TEST-DCC-GRS-001",
+          "linkName": "GRS Transaction Certificate \u2014 RCO-TC-2026-001 \u2014 Reeco DCC",
+          "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
+          "hashDigest": "a3f8c2d1e4b5609f7e8a2b3c4d5e6f7089abcdef1234567890abcdef12345678",
+          "hashMethod": "SHA-256"
+        }
+      }
+    ],
+    "circularityScorecard": {
+      "recycledContent": 0.45,
+      "recyclableContent": 0.45,
+      "utilityFactor": 1.0,
+      "recyclingInformation": {
+        "linkURL": "https://portal.reeco.eco/care/RCO-TEST-DPP-001#end-of-life",
+        "linkName": "End-of-life textile recycling instructions",
+        "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dpp"
+      }
+    },
+    "traceabilityInformation": [
+      {
+        "valueChainProcess": "Weaving",
+        "verifiedRatio": 1.0,
+        "traceabilityEvent": [
+          {
+            "linkURL": "https://portal.reeco.eco/dcc/test/RCO-TEST-DCC-GRS-001",
+            "linkName": "GRS TC \u2014 batch-level transformation event",
+            "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
+            "hashDigest": "a3f8c2d1e4b5609f7e8a2b3c4d5e6f7089abcdef1234567890abcdef12345678",
+            "hashMethod": "SHA-256"
+          }
+        ]
+      }
+    ]
+  }
+}
