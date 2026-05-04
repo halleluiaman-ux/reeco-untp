@@ -1,7 +1,8 @@
 # Reeco — UNTP Implementation
 
 [![UNTP Software Register](https://img.shields.io/badge/UN%2FCEFACT-UNTP%20Software%20Register-1f6feb)](https://opensource.unicc.org/un/unece/uncefact/spec-untp/-/merge_requests/732)
-[![CIRPASS-2](https://img.shields.io/badge/CIRPASS--2-Expert%20Member-2ea44f)](https://cirpassproject.eu/)
+[![CIRPASS-2 EWG1](https://img.shields.io/badge/CIRPASS--2-EWG1%20Expert%20Member-2ea44f)](https://cirpass2.eu/expert-working-group-1/)
+[![CIRPASS-2 EWG3](https://img.shields.io/badge/CIRPASS--2-EWG3%20Expert%20Member-2ea44f)](https://cirpass2.eu/expert-working-group-3/)
 [![JRC Registered Stakeholder](https://img.shields.io/badge/JRC-Registered%20Stakeholder-555)](https://joint-research-centre.ec.europa.eu/)
 [![ESPR 2028 Ready](https://img.shields.io/badge/ESPR%202028-Ready-orange)]()
 
