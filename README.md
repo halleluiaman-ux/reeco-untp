@@ -1,6 +1,7 @@
 # Reeco — UNTP Implementation
 
 > 📄 **[Read the manifesto →](MANIFESTO.md)** *The structural gap between batch certification and per-unit DPP, and what Reeco does about it.*
+
 [![UNTP Software Register](https://img.shields.io/badge/UN%2FCEFACT-UNTP%20Software%20Register-1f6feb)](https://opensource.unicc.org/un/unece/uncefact/spec-untp/-/merge_requests/732)
 [![CIRPASS-2 EWG1](https://img.shields.io/badge/CIRPASS--2-EWG1%20Expert%20Member-2ea44f)](https://cirpass2.eu/expert-working-group-1/)
 [![CIRPASS-2 EWG3](https://img.shields.io/badge/CIRPASS--2-EWG3%20Expert%20Member-2ea44f)](https://cirpass2.eu/expert-working-group-3/)
@@ -21,6 +22,8 @@ UNTP (UN Transparency Protocol) implementation artefacts for **Reeco®**, the EU
 - **Test report**: [docs/test-reports/REECO_UNTP_TEST_REPORT_v1_0.md](docs/test-reports/REECO_UNTP_TEST_REPORT_v1_0.md)
 - **DPP fixture**: [test-report/fixtures/reeco_textile_dpp_0.6.1.json](test-report/fixtures/reeco_textile_dpp_0.6.1.json)
 - **DCC fixture**: [test-report/fixtures/reeco_grs_dcc_0.6.1.json](test-report/fixtures/reeco_grs_dcc_0.6.1.json)
+
+> 📅 **Quarterly re-attestations** are tracked in [docs/test-reports/quarterly-runs/](docs/test-reports/quarterly-runs/) — continuous evidence chain demonstrating operational conformance over time.
 
 ---
 
