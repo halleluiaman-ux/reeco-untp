@@ -67,6 +67,7 @@ The platform bridges the structural mismatch between **batch-level certification
 
 **Stefano Cipriani Studio**
 
+- Legal Entity Identifier (LEI): [`8156007B2A5194A30603`](https://search.gleif.org/#/record/8156007B2A5194A30603)
 - VAT (P.IVA): `IT02391280977`
 - ATECO: `62.10.00` — Software production, consulting, and related activities (added 2026-04-09)
 - Italian software deposit: SIAE `D000029472` — *Sistema Reeco di Verifica Forense v1.0*
