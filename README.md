@@ -1,5 +1,6 @@
 # Reeco — UNTP Implementation
 
+> 📄 **[Read the manifesto →](MANIFESTO.md)** *The structural gap between batch certification and per-unit DPP, and what Reeco does about it.*
 [![UNTP Software Register](https://img.shields.io/badge/UN%2FCEFACT-UNTP%20Software%20Register-1f6feb)](https://opensource.unicc.org/un/unece/uncefact/spec-untp/-/merge_requests/732)
 [![CIRPASS-2 EWG1](https://img.shields.io/badge/CIRPASS--2-EWG1%20Expert%20Member-2ea44f)](https://cirpass2.eu/expert-working-group-1/)
 [![CIRPASS-2 EWG3](https://img.shields.io/badge/CIRPASS--2-EWG3%20Expert%20Member-2ea44f)](https://cirpass2.eu/expert-working-group-3/)
